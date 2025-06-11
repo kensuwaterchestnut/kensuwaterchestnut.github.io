@@ -3,74 +3,155 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <title>啃酥 KenSu 炸物品牌</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>啃酥炸物品牌官網</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <style>
-        body { font-family: "Microsoft JhengHei", sans-serif; margin: 0; padding: 0; background-color: #fffaf5; }
-        header { background-color: #111; color: white; text-align: center; padding: 1.5rem; }
-        h1 { margin: 0; font-size: 2rem; }
-        .section { padding: 2rem; max-width: 960px; margin: auto; }
-        .section h2 { border-bottom: 2px solid #333; padding-bottom: 0.5rem; }
-        .products img { width: 100%; max-width: 600px; display: block; margin: 1rem auto; border-radius: 12px; }
-        .table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-        .table th, .table td { border: 1px solid #aaa; padding: 0.5rem; text-align: center; }
-        .footer { background-color: #222; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
-        a { color: #ffcc00; text-decoration: none; }
+        body { margin: 0; font-family: 'Noto Sans TC', sans-serif; background-color: #fffdf7; color: #222; }
+        header {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 5vh 2rem;
+        }
+        header img {
+            max-width: 220px;
+            height: auto;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            margin: 1rem 0 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #ccc;
+        }
+        section {
+            padding: 4rem 1.5rem;
+            max-width: 960px;
+            margin: auto;
+        }
+        h2 {
+            font-size: 1.6rem;
+            border-left: 5px solid #000;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .product-grid img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+        .product-grid figcaption {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        .process-step {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+        .cta {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .cta a {
+            background: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        footer {
+            background-color: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>啃酥炸物品牌官網</h1>
+    <img src="啃酥 Ken-01.png" alt="啃酥LOGO">
+    <h1>酥、一門値得研究の事。</h1>
+    <p>研究每一口的酥脆，才敢賣出去。</p>
 </header>
 
-<section class="section">
-    <h2>品牌介紹</h2>
-    <p>2022年，創辦人在台中一中街開設了自己的品牌「啃酥」，堅持選用新鮮原物料、數十種配方調製而成的獨特炸粉，以及健康食用油，現炸起鍋，確保每一口菱角酥都能保有香脆口感。</p>
-    <p>目前推出了四種產品：菱角酥、起司酥、芋泥酥、炸鮮奶。獨特的口味組合吸引眾多食客前來品嚐，口感香甜酥脆，讓人一口接一口停不下來。</p>
-    <p>創辦人更希望能幫助想改變人生的年輕人創業，積極推動加盟創業計劃，並已規劃完善加盟方案，邀請你一起為更多人帶來美味與溫暖。</p>
+<section data-aos="fade-up">
+    <h2>品牌故事</h2>
+    <p>啃酥創立於台中一中街，堅持使用新鮮原物料與獨家炸粉，每一口都經過細緻調配，只為還原最道地的香酥口感。無論是夜市、商圈，啃酥都是炸物點心的創業首選。</p>
 </section>
 
-<section class="section">
-    <h2>產品介紹</h2>
-    <div class="products">
-        <img src="menu_web.png" alt="產品菜單">
+<section data-aos="fade-up">
+    <h2>招牌商品</h2>
+    <div class="product-grid">
+        <figure>
+            <img src="菱角酥.png" alt="菱角酥">
+            <figcaption>菱角酥</figcaption>
+        </figure>
+        <figure>
+            <img src="起司酥.png" alt="起司酥">
+            <figcaption>起司酥</figcaption>
+        </figure>
+        <figure>
+            <img src="芋泥酥.png" alt="芋泥酥">
+            <figcaption>芋泥酥</figcaption>
+        </figure>
+        <figure>
+            <img src="炸鮮奶.png" alt="炸鮮奶">
+            <figcaption>炸鮮奶</figcaption>
+        </figure>
     </div>
 </section>
 
-<section class="section">
-    <h2>加盟方案</h2>
-    <table class="table">
-        <tr><th>加盟方案</th><th>說明</th></tr>
-        <tr><td>機動型</td><td>適合夜市 / 市集</td></tr>
-        <tr><td>人潮型</td><td>適合校園 / 商圈</td></tr>
-        <tr><td>行動餐車型</td><td>可多點經營、靈活運作</td></tr>
-    </table>
+<section data-aos="fade-up">
+    <h2>加盟優勢</h2>
+    <ul>
+        <li>無需餐飲經驗，總部全程協助</li>
+        <li>點心品項多元，適合各地夜市、校園與市集</li>
+        <li>低門檻創業，投入快速、回本穩定</li>
+        <li>品牌視覺完整，吸睛又好賣</li>
+    </ul>
 </section>
 
-<section class="section">
+<section data-aos="fade-up">
     <h2>加盟流程</h2>
-    <ol>
-        <li>提出申請</li>
-        <li>線上諮詢</li>
-        <li>安排面談</li>
-        <li>合約簽署</li>
-        <li>完整訓練</li>
-        <li>協助開業</li>
-    </ol>
+    <div class="process-step">1. 提出申請</div>
+    <div class="process-step">2. 線上諮詢</div>
+    <div class="process-step">3. 安排面談</div>
+    <div class="process-step">4. 合約簽署</div>
+    <div class="process-step">5. 完整訓練</div>
+    <div class="process-step">6. 協助開業</div>
 </section>
 
-<section class="section">
-    <h2>聯絡方式</h2>
-    <p>Facebook 粉絲專頁：<br>
-    <a href="https://www.facebook.com/ken.su.water.chestnut/" target="_blank">
-        https://www.facebook.com/ken.su.water.chestnut/
-    </a></p>
+<section class="cta" data-aos="fade-up">
+    <h2>立即加入啃酥行列</h2>
+    <p>一起把酥脆的感動，傳遞給更多人。</p>
+    <a href="https://www.facebook.com/ken.su.water.chestnut/" target="_blank">聯絡我們</a>
 </section>
 
-<div class="footer">
-    &copy; 2025 啃酥炸物 KenSu 炸物品牌
-</div>
+<footer>
+    &copy; 2025 啃酥 KenSu 炸物品牌 | 品牌顧問製作
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
