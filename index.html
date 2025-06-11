@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>啃酥 KenSu 炸物品牌</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body { margin: 0; font-family: 'Noto Sans TC', sans-serif; background: #fffdf7; color: #222; }
+    nav { background: #000; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 999; }
+    nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: bold; }
+    nav .logo { color: #fffcc2; font-size: 1.2rem; }
+    header { text-align: center; padding: 5vh 1rem; background: #000; color: white; }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; color: #ccc; }
+    section { padding: 3rem 1.5rem; max-width: 960px; margin: auto; }
+    h2 { font-size: 1.6rem; border-left: 5px solid #000; padding-left: 1rem; margin-bottom: 1rem; }
+    .drink-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+    .drink-grid img { width: 100%; border-radius: 8px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+    .drink-grid div { text-align: center; font-weight: bold; margin-top: 0.5rem; }
+    .carousel { display: flex; overflow-x: auto; gap: 1rem; scroll-snap-type: x mandatory; padding: 1rem 0; }
+    .carousel img { height: 220px; border-radius: 12px; scroll-snap-align: start; }
+    footer { background: #111; color: #ccc; text-align: center; padding: 2rem 1rem; }
+    .socials img { width: 40px; margin: 0 0.5rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">啃酥 KenSu</div>
+    <div>
+      <a href="index.html">首頁</a>
+      <a href="about.html">品牌故事</a>
+      <a href="franchise.html">加盟資訊</a>
+      <a href="contact.html">聯絡我們</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>酥、一門値得研究の事。</h1>
+    <p>研究每一口的酥脆，才敢賣出去。</p>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>飲品專區</h2>
+    <div class="drink-grid">
+      <div><img src="95166772-KenSu 無糖麥茶.jpg" alt="無糖麥茶" /><div>無糖麥茶</div></div>
+      <div><img src="95166773-KenSu 無糖青茶.jpg" alt="無糖青茶" /><div>無糖青茶</div></div>
+      <div><img src="95166776-KenSu 酸梅飲.jpg" alt="酸梅飲" /><div>酸梅飲</div></div>
+      <div><img src="95166774-KenSu 玫瑰飲.jpg" alt="玫瑰飲" /><div>玫瑰飲</div></div>
+      <div><img src="95166775-KenSu 特調奶茶.jpg" alt="特調奶茶" /><div>特調奶茶</div></div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>活動花絮</h2>
+    <div class="carousel">
+      <img src="490810712_729166799622845_3227579976165673671_n.jpg" alt="活動圖" />
+    </div>
+  </section>
+
+  <footer>
+    <p>加入我們｜KenSu 炸物品牌</p>
+    <div class="socials">
+      <a href="https://line.me/R/ti/p/@174vvkhs" target="_blank"><img src="1749631347178.jpg" alt="LINE 加盟" /></a>
+      <a href="https://www.facebook.com/ken.su.water.chestnut/" target="_blank"><img src="1749631317809.jpg" alt="Facebook" /></a>
+    </div>
+    <p style="margin-top:1rem">&copy; 2025 KenSu All Rights Reserved</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init(); </script>
+</body>
+</html>
